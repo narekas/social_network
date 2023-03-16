@@ -27,3 +27,12 @@ pip install django-braces==1.15.0
 
 # https://www.mkdocs.org/
 pip install mkdocs
+
+# https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
+python -m pip install django-debug-toolbar
+
+# https://jupyter.org/install#jupyter-notebook
+pip install notebook
+
+# https://django-extensions.readthedocs.io/en/latest/
+pip install django-extensions
