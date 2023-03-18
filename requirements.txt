@@ -36,3 +36,6 @@ pip install notebook
 
 # https://django-extensions.readthedocs.io/en/latest/
 pip install django-extensions
+
+# https://django-taggit.readthedocs.io/en/latest/getting_started.html
+pip install django-taggit==3.1.0

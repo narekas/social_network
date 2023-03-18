@@ -29,7 +29,7 @@ from dotenv import load_dotenv
 
 
 # Loading ENV
-env_path = Path(' . ') / '.env'
+env_path = Path('.') / '.env'
 
 # env_path = '.test.env'
 load_dotenv(dotenv_path=env_path)
@@ -189,7 +189,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
@@ -244,10 +244,15 @@ CRISPY_TEMPLATE_PACK = 'uni_form'
 # django-ckeditor
 
 CKEDITOR_CONFIGS = {
-    'awesome_ckeditor': {
-        'toolbar': 'Basic',
-    },
+'default': {
+    'toolbar':'full',
+},
 }
+# CKEDITOR_CONFIGS = {
+#     'awesome_ckeditor': {
+#         'toolbar': 'Basic',
+#     },
+# }
 
 # End django-ckeditor
 
@@ -286,3 +291,6 @@ MESSAGE_TAGS = {
     messages.WARNING: 'alert-warning',
     messages.ERROR: 'alert-danger',
 }
+
+# в производстве убрать.
+os.environ['DJANGO_ALLOW_ASYNC_UNSAFE'] = 'true'
